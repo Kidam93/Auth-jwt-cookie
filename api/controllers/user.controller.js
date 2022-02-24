@@ -2,7 +2,7 @@ const UserModel = require("../models/user.model");
 const ObjectID = require("mongoose").Types.ObjectId;
 
 module.exports.getTest = async (req, res) => {
-  res.status(200).json("chaaaaattte");
+  res.status(200).json("test");
 }
 
 module.exports.getAllUsers = async (req, res) => {
@@ -105,6 +105,7 @@ module.exports.unfollow = async (req, res) => {
   } catch (err) {
     return res.status(500).json({ message: err });
   }
+
 }
 
 

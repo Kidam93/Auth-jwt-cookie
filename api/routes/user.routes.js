@@ -5,12 +5,14 @@ const uploadController = require('../controllers/upload.controller');
 const multer = require("multer");
 const upload = multer();
 
+//test: http://127.0.0.1:5000/api/user/test
+router.get("/test", userController.getTest);
+
 // auth
 router.post("/register", authController.signUp);
 router.post("/login", authController.signIn);
 router.get("/logout", authController.logout);
 
-router.get("/test", userController.getTest);
 // user DB
 router.get("/", userController.getAllUsers);
 router.get("/:id", userController.userInfo);
