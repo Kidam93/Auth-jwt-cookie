@@ -1,2 +1,6 @@
 /api/node_modules
-/config/.env
+/client/node_modules
+/api/.env
+/client/.env
+/.gitignore
+/.idea
